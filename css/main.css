@@ -263,8 +263,13 @@ header {
     }
 }
 
-.form-popup .singup {
+.form-popup .singup,
+.form-popup.show-signup .login {
     display: none;
+}
+
+.form-popup.show-signup .singup {
+    display: flex;
 }
 
 .login .form-datails {
