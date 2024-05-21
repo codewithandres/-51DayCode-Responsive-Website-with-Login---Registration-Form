@@ -96,6 +96,8 @@ header {
 
 .form-popup {
     position: fixed;
+    opacity: 0;
+    pointer-events: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -134,10 +136,12 @@ header {
             padding: 0 0.5em;
             position: relative;
 
+
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
+
             border-top-left-radius: .5em;
             border-bottom-left-radius: .5rem;
 
@@ -279,4 +283,23 @@ header {
     width: 100%;
     height: 100%;
     backdrop-filter: blur(5px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 720px) {
+    .form-popup {
+        width: 95%;
+
+        .form-box {
+            .form-datails {
+                display: none;
+            }
+
+            .form-content {
+                padding: 30px 20px;
+            }
+        }
+    }
+
 }
