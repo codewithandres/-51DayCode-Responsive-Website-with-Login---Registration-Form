@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- nav bar -->
     <header>
         <nav class="navbar">
             <a href="/" class="logo">
@@ -29,6 +30,84 @@
             <button class="login-btn">login</button>
         </nav>
     </header>
+    <!-- capa del overly -->
+    <div class="blur-bg-overly"></div>
+    <!-- pop Up Form -->
+    <div class="form-popup">
+        <i class="ri-close-line close-btn"></i>
+        <!-- formualario de login -->
+        <div class="form-box login">
+            <div class="form-datails">
+                <h2>Hellcom back</h2>
+                <p>please log in using your personal information to status </p>
+            </div>
+            <div class="form-content">
+                <h3 class="login">Login</h3>
+                <form action="/">
+
+                    <div class="input-field">
+                        <input type="email" required>
+                        <label for="">email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label for="">password</label>
+                    </div>
+
+                    <a href="/" class="forgot-password">Forgot Password?</a>
+                    <button type="submit">Log in </button>
+                </form>
+
+                <div class="bottom-links">
+                    Don't have an aconunt ?
+                    <a href="/"> Sing In</a>
+                </div>
+            </div>
+        </div>
+        <!-- formulario de registro -->
+        <div class="form-box singup">
+            <div class="form-datails">
+                <h2>Create Account</h2>
+                <p>please log in using your personal information to status </p>
+            </div>
+            <div class="form-content">
+                <h3 class="login">Signup</h3>
+                <form action="/">
+
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label for="">user name</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="email" required>
+                        <label for="">enter your email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label for="">Create password</label>
+                    </div>
+
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy"> I agree the
+                            <a href="#">Terms & conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Signup</button>
+                </form>
+
+                <div class="bottom-links">
+                    Already have an aconunt ?
+                    <a href="/"> login</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
