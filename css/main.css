@@ -18,17 +18,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
-    &::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(hsla(240, 33%, 6%, 0.664), transparent);
-    }
 }
+
 
 a {
     text-decoration: none;
@@ -37,6 +28,7 @@ a {
 header {
     width: 100%;
     padding: 0 20px;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.719) 30%, transparent);
 
     position: fixed;
     left: 0;
@@ -64,9 +56,10 @@ header {
 
 .navbar .links {
     display: flex;
-    list-style: none;
     gap: 33px;
-    transition: transform 1s cubic-bezier(.98, 0, .04, .98)
+
+    list-style: none;
+    transition: transform 1s cubic-bezier(.98, 0, .04, .98);
 }
 
 .navbar .links a {
@@ -337,26 +330,26 @@ header {
 .main {
     width: 100%;
     margin-top: 5em;
-    position: relative;
+    /*position: relative;*/
 }
 
 .section--container {
     width: 100%;
     padding: 3em 4.6em;
+    /*position: static;*/
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .section--info {
-        /*width: 30%;*/
 
         display: flex;
         flex-direction: column;
         gap: 1em;
 
         .title--saludo {
-            color: hsl(0, 62%, 39%);
+            color: hsl(0, 23%, 92%);
             font-size: 1.4em;
             font-weight: 600;
         }
@@ -383,6 +376,7 @@ header {
             display: flex;
 
             button {
+                pointer-events: auto;
                 padding: .8em 2.5em;
                 font-size: 1em;
                 font-weight: 600;
@@ -504,6 +498,7 @@ header {
             display: block;
             padding-top: 60px;
             text-align: center;
+            z-index: 999;
 
             a {
                 display: inline-flex;
