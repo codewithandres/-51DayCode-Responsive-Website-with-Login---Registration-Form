@@ -222,15 +222,44 @@ header {
                         border-radius: .3em;
                         padding: 0 15px;
 
-                        &:is(:focus, :valid)~label {
+                        &:focus~label {
                             font-size: 0.75rem;
                             transform: translateY(-120%);
-                            /*color: hsl(0, 62%, 39%);*/
                         }
 
-                        &:is(:focus, :valid) {
+                        &:focus {
                             padding: 18px 15px 0;
                         }
+
+                        /* cuando el formuario es incorrecto */
+                        &.invalid~label {
+                            font-size: 0.75rem;
+                            transform: translateY(-120%);
+                        }
+
+                        &.invalid {
+                            padding: 18px 15px 0;
+                            box-shadow: hsla(0, 90%, 49%, 0.02) 0px 1px 3px 0px, rgba(223, 7, 7, 0.15) 0px 0px 0px 1px;
+                        }
+
+                        /* cuendo el formulario es correcto */
+                        &.correact~label {
+                            font-size: 0.75rem;
+                            transform: translateY(-120%);
+                        }
+
+                        &.correact {
+                            padding: 18px 15px 0;
+                        }
+
+                        /*&:is(:focus, :valid)~label {
+                            font-size: 0.75rem;
+                            transform: translateY(-120%);
+                        }*/
+
+                        /*&:is(:focus, :valid) {
+                            padding: 18px 15px 0;
+                        }*/
 
                         /*&:focus {
                             box-shadow: hsla(0, 90%, 49%, 0.02) 0px 1px 3px 0px, rgba(223, 7, 7, 0.15) 0px 0px 0px 1px;
